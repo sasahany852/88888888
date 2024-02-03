@@ -63,3 +63,4 @@ process.on("unhandledRejection", async (err) => {
     console.log(`[ANTI - CRUSH] Unhandled Rejection : ${err}`.red.bold)
     console.log(err)
 })
+client.login(process.env.token)
