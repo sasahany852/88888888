@@ -1,5 +1,5 @@
 {
-    "TOKEN": "MTAwMjA3OTI4ODcyMTQwODAyMA.GHz7EJ.TPd-0YvC__7xjWZWFk0xLuY-UuoiaInYb3075c",
+    client.login(process.env.token),
     "CLIENTID": "1002079288721408020",
     "OWNER": [
         "639061475876405258"
