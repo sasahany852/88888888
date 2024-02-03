@@ -37,10 +37,7 @@ client.poru = new Poru(client, config.NODES, {
     },
 });
 
-if (!config.TOKEN) {
-    console.log("[WARN] Token for discord bot is required! put your token in config file".yellow.bold + "\n")
-    return process.exit();
-};
+
 
 client.config = require('./config/config.json');
 client.events = new Collection()
@@ -52,7 +49,7 @@ module.exports = client;
     require(`./handlers/${file}`)(client);
 });
 
-client.login(config.TOKEN)
+client.login(.env.TOKEN)
     .catch((err) => {
         console.log("[CRUSH] Something went wrong while connecting to your bot" + "\n");
         console.log("[CRUSH] Error from DiscordAPI :" + err);
