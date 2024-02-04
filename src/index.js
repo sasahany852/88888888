@@ -50,11 +50,7 @@ module.exports = client;
 });
 
 client.login(process.env.TOKEN);
-    .catch((err) => {
-        console.log("[CRUSH] Something went wrong while connecting to your bot" + "\n");
-        console.log("[CRUSH] Error from DiscordAPI :" + err);
-        process.exit();
-    })
+    
 
 process.on("unhandledRejection", async (err) => {
     console.log(`[ANTI - CRUSH] Unhandled Rejection : ${err}`.red.bold)
