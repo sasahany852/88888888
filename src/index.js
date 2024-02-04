@@ -55,6 +55,7 @@ client.login(TOKEN)
         console.log("[CRUSH] Error from DiscordAPI :" + err);
         process.exit();
     })
+const mySecret = process.env['TOKEN']
 
 process.on("unhandledRejection", async (err) => {
     console.log(`[ANTI - CRUSH] Unhandled Rejection : ${err}`.red.bold)
