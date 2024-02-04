@@ -1,5 +1,5 @@
 {
-
+client.login(process.env.TOKEN);
     "CLIENTID": "1007962755321569341",
     "OWNER": [
         "639061475876405258"
