@@ -49,7 +49,7 @@ module.exports = client;
     require(`./handlers/${file}`)(client);
 });
 
-client.login("TOKEN")
+client.login('TOKEN')
     .catch((err) => {
         console.log("[CRUSH] Something went wrong while connecting to your bot" + "\n");
         console.log("[CRUSH] Error from DiscordAPI :" + err);
