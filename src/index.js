@@ -49,7 +49,9 @@ module.exports = client;
     require(`./handlers/${file}`)(client);
 });
 
-client.login(process.env.TOKEN);
+client.login(process.env.token).catch(() => {
+    console.log(chalk.red('The Token is not valid'))
+})
     
 
 process.on("unhandledRejection", async (err) => {
