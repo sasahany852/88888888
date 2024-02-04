@@ -48,15 +48,13 @@ module.exports = client;
 ["event", "slash", "poruEvents"].forEach(file => {
     require(`./handlers/${file}`)(client);
 });
-/*
-client.login(TOKEN)
+
+client.login("TOKEN")
     .catch((err) => {
         console.log("[CRUSH] Something went wrong while connecting to your bot" + "\n");
         console.log("[CRUSH] Error from DiscordAPI :" + err);
         process.exit();
     })
-*/
-const mySecret = process.env['TOKEN']
 
 process.on("unhandledRejection", async (err) => {
     console.log(`[ANTI - CRUSH] Unhandled Rejection : ${err}`.red.bold)
